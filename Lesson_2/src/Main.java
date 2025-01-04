@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 public class Main {
     public static void main(String[] args) {
-        Method[] strMethods = String.class.getMethods();
+        Method[] strMethods = String.class.getDeclaredMethods();
         for (Method strMethod : strMethods) {
             System.out.println(strMethod);
         }
