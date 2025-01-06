@@ -22,10 +22,10 @@ public class DB {
         }
     }
 
-    public static void savePersonToDB(Person person) {
+    public static void savePersonToDB(Object ob) {
         Session session = connector.getSession();
         session.beginTransaction();
-        session.save(person);
+        session.save(ob);
         session.getTransaction().commit();
         session.close();
     }
