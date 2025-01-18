@@ -13,13 +13,6 @@ public class Main {
 
         Person person2 = loadPerson("src/person.bin");
         System.out.println(person2);
-
-        QueryBuilder queryBuilder = new QueryBuilder();
-
-        System.out.println(queryBuilder.buildInsertQuery(person1));
-        System.out.println(queryBuilder.buildUpdateQuery(person1));
-        System.out.println(queryBuilder.buildDeleteQuery(person1.getClass(), person1.getId()));
-        System.out.println(queryBuilder.buildSelectQuery(person1.getClass(), person1.getId()));
     }
 
     static void savePerson(String filePath, Person person) {

@@ -1,14 +1,10 @@
 import java.io.Serializable;
 import java.util.UUID;
 
-@Entity
-@Table(name = "users")
+
 public class Person implements Serializable {
-    @Column(name = "id", primaryKey = true)
     private UUID id;
-    @Column(name = "name")
     private String name;
-    @Column(name = "age")
     private int age;
 
 
